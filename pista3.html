@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pista 3</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script>
+    function elegir(opcion) {
+      if (opcion === 'Manzanillo') {
+        window.location.href = 'manzanillo.html';
+      } else {
+        alert("Incorrecto. Esa no es la opción.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Pista 3</h2>
+    <p>Selecciona el único botón que NO es una fruta:</p>
+    <button onclick="elegir('Manzana')">Manzana</button>
+    <button onclick="elegir('Pera')">Pera</button>
+    <button onclick="elegir('Manzanillo')">Manzanillo</button>
+  </div>
+</body>
+</html>

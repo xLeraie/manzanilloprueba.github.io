@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pista 2</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script>
+    function verificarRespuesta() {
+      var r = document.getElementById("respuesta").value.toLowerCase();
+      if (r.includes("manzanillo libre")) {
+        document.getElementById("continuar").style.display = "inline-block";
+        document.getElementById("mensaje").textContent = "¡Correcto!";
+      } else {
+        document.getElementById("mensaje").textContent = "Intenta de nuevo.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Pista 2</h2>
+    <p>¡Bien hecho! Has encontrado una carta, parece ser que viene de parte de manzanillo.
+
+      Dice:
+      
+      <b>M</b>e he perdido, no sé donde estoy y tengo l<b>a</b> receta co<b>n</b>migo, en esta carta se oculta una contraseña para que puedas encontrarme. Ha<b>z</b> hinc<b>a</b>pié en las pistas que te muestro.
+      
+      <b>N</b>o la puedo desvelar deb<b>i</b>do a que no quiero que esto quede en manos de <b>l</b>a persona equivocada. 
+      
+      Pero como cuento con tu inte<b>l</b>igencia, sé que tú si p<b>o</b>drás desve<b>l</b>ar el misterio y dar con m<b>i</b> paradero.
+      
+      <b>B</b>asta con que eches un ojo y lo consegui<b>r</b>ás.
+      
+      Apr<b>e</b>súrate, el futuro de este nuevo sabor depende de ti.</p>
+    <input type="text" id="respuesta" placeholder="Tu respuesta...">
+    <br>
+    <button onclick="verificarRespuesta()">Verificar</button>
+    <p id="mensaje"></p>
+    <a href="pista3.html"><button id="continuar" style="display:none;">Continuar</button></a>
+  </div>
+</body>
+</html>
